@@ -1,0 +1,117 @@
+@import 'fonts';
+$main-font: "Century Gothic", sans-serif;
+
+$main-bgcolor: #54507c;
+$second-bgcolor: #f6f1eb;
+
+$layout-color: #cecdda;
+$element-color: #6d82d0;
+
+
+html {
+    font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+
+    font-family: $main-font;
+}
+
+.page {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+
+.menu li{
+    list-style: none;
+}
+
+.title {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+
+.text {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.button {
+    padding: 30px 0;
+
+    border-radius: 10px;
+    background-color: $element-color;
+
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
+
+    transition: 0.3s;
+
+    &:hover {
+        background-color: darken($color: $element-color, $amount: 10);
+    }
+
+    &:active {
+        background-color: darken($color: $element-color, $amount: 20);
+    }
+}
+
+.section__title {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 15px 30px;
+
+    font-size: 60px;
+
+    background-color: rgba($layout-color, 0.85);
+    box-shadow: 0 -15px 70px 15px rgba($layout-color, 0.6);
+}
+
+.page__title {
+    height: 100px;
+    margin: 0;
+    padding: 15px 30px 15px 100px;
+
+    font-size: 60px;
+    background-color: rgba($layout-color, 0.8);
+}
+
+@import 'blocks/about';
+
+@import 'blocks/services';
+
+@import 'blocks/results';
+
+@import 'blocks/contacts';
+
+@import 'blocks/faq';
+
+@import 'blocks/footer';
+
+@import 'pages/about-page';
+
+@import 'pages/services-page';
+
+@import 'pages/serv-page';
+
+@import 'pages/policy';

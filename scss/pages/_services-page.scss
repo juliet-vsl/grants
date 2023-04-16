@@ -1,0 +1,112 @@
+.services-page {
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    background: linear-gradient(to right, rgba($main-bgcolor, 0.8), rgba($main-bgcolor, 0.8)), url(../../img/bg-serv.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.services-page__title {
+    width: 100%;
+    max-width: 380px;
+}
+
+.percent__container {
+    position: absolute;
+    top: 60px;
+    right: 130px;
+}
+
+.percent__line {
+    width: 650px;
+    height: 12px;
+
+    background: linear-gradient(to right, $element-color 80%, $layout-color 80%);
+    border-radius: 6px;
+}
+
+.percent__block {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.percent__item {
+    padding: 5px;
+
+    &-1 {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    &-2 {
+        width: 100%;
+        max-width: 180px;
+        margin-right: -50px;
+    }
+}
+
+.percent__number {
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+
+    &-1 {
+        font-size: 170px;
+    }
+
+    &-2 {
+        margin-top: 20px;
+        font-size: 80px;
+    }
+}
+
+.percent__description {
+    color: #fff;
+    font-weight: 700;
+
+    & span {
+        color: #8ba4ff;
+    }
+
+    &-1 {
+        font-size: 33px;
+    }
+
+    &-2 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+.services-page__container {
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 240px;
+    padding: 30px 30px 30px 70px;
+
+    background-color: rgba($layout-color, 0.5);
+}
+
+.services-page__link {
+    color: #fff;
+    font-size: 30px;
+    line-height: 2em;
+
+    &:hover {
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    &:active {
+        font-weight: 700;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,29 @@
+.policy-page {
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    background: linear-gradient(to right, rgba(153, 152, 189, 0.7), rgba(153, 152, 189, 0.7)), url(../../img/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.policy__title {
+    font-size: 35px;
+    padding: 30px;
+    text-align: center;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.policy__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 60px auto 0;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

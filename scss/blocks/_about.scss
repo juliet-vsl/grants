@@ -1,0 +1,59 @@
+.about {
+    padding-bottom: 60px;
+
+    background: linear-gradient(to right, rgba(153, 152, 189, 0.7), rgba(153, 152, 189, 0.7)), url(../../img/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__items {
+    margin-top: 80px;
+}
+
+.about__items-item {
+    min-height: 100px;
+    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about__icon {
+    width: 94px;
+    height: 70px;
+
+    display: inline-block;
+}
+
+.about__text {
+    width: 100%;
+    max-width: 1200px;
+
+    font-size: 31px;
+    text-align: left;
+}
+
+.about__button {
+    width: 500px;
+    height: 69px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    font-size: 25px;
+
+    &:hover {
+        width: 530px;
+        height: 70px;
+
+        font-size: 27px;
+    }
+
+    &:active {
+        width: 530px;
+        height: 70px;
+
+        font-size: 28px;
+    }
+}
+
