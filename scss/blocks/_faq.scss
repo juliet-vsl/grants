@@ -10,16 +10,14 @@
 .question__container {
     margin-top: 70px;
     margin-right: auto;
-
-    width: 100%;
-    max-width: 1400px;
 }
 
 .question__item {
     padding: 40px;
     margin-bottom: 50px;
 
-    background-color: rgba($layout-color, 0.85);
+    background-color: rgba($main-bgcolor, 0.5);
+    color: #fff;
 
     &:last-child {
         margin-bottom: 0;
@@ -92,3 +90,8 @@
 .question__item-text {
     display: none;
 }
+
+
+/*Адаптивность 
+====================================================*/
+

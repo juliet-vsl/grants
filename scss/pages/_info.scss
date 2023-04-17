@@ -1,0 +1,37 @@
+.info {
+    background: linear-gradient(to right, rgba($main-bgcolor, 0.7), rgba($main-bgcolor, 0.7));
+}
+
+.info__container {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.info__table {
+    margin-top: 70px;
+
+    border: 1px solid $second-bgcolor;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.table-head__cell {
+    padding: 20px;
+
+    font-size: 25px;
+    font-weight: 700;
+    border: 2px solid $second-bgcolor;
+}
+
+.table-body__cell {
+    padding: 20px;
+
+    font-size: 20px;
+    border: 1px solid $second-bgcolor;
+}
+
+
+

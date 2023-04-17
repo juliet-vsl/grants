@@ -137,4 +137,43 @@
     }
 }
 
+/*Адаптация 
+====================================================*/
+
+@media (max-width: 1401px) {
+    .header-nav__item {
+        width: 120px;
+        padding: 25px 10px;
+
+        font-size: 25px;
+    }
+
+    .header-title {
+        font-size: 65px;
+    }
+
+    .header-text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .header-nav__item {
+        width: 100px;
+        padding: 30px 10px;
+
+        font-size: 20px;
+    }
+
+    .header__logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .header__phone {
+        font-size: 25px;
+    }
+
+}
+
 

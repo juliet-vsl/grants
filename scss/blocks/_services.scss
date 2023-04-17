@@ -7,7 +7,7 @@
 }
 
 .services__container {
-    margin-top: 70px;
+    margin: 70px auto 0;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -56,9 +56,10 @@
     margin-top: 53px;
     padding: 15px;
 
-    background-color: rgba($layout-color, 0.6);
+    background: linear-gradient(to right, rgba($main-bgcolor, 0.2), rgba($main-bgcolor, 0.5));
 
     font-size: 20px;
+    color: #fff;
 
     display: flex;
     flex-direction: column;
@@ -109,12 +110,14 @@
     text-decoration: underline;
 
     &:hover {
+        margin-top: 50px;
         font-size: 33px;
         font-weight: 700;
         text-decoration: none;
     }
 
     &:active {
+        margin-top: 50px;
         font-size: 33px;
         text-decoration: underline;
     }

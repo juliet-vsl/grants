@@ -1,8 +1,9 @@
 @import 'fonts';
 $main-font: "Century Gothic", sans-serif;
 
-$main-bgcolor: #54507c;
+$main-bgcolor: #506094;
 $second-bgcolor: #f6f1eb;
+$third-bgcolor: #5e6885;
 
 $layout-color: #cecdda;
 $element-color: #6d82d0;
@@ -33,6 +34,11 @@ body {
     margin: 0 auto;
 }
 
+.container {
+    width: 100%;
+    max-width: 1400px;
+}
+
 @import 'blocks/header';
 
 .menu li{
@@ -56,6 +62,7 @@ body {
 
     border-radius: 10px;
     background-color: $element-color;
+    box-shadow: 5px 5px 1px rgba($layout-color, 0.3);
 
     color: #fff;
     font-size: 40px;
@@ -82,9 +89,8 @@ body {
     padding: 15px 30px;
 
     font-size: 60px;
-
+    
     background-color: rgba($layout-color, 0.85);
-    box-shadow: 0 -15px 70px 15px rgba($layout-color, 0.6);
 }
 
 .page__title {
@@ -115,3 +121,12 @@ body {
 @import 'pages/serv-page';
 
 @import 'pages/policy';
+
+@import 'pages/info';
+
+
+@media (max-width: 1401px) {
+    .container {
+        max-width: 1200px;
+    }
+}

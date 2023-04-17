@@ -7,8 +7,6 @@
 }
 
 .contacts__container {
-    width: 100%;
-    max-width: 1400px;
     margin: 70px auto 0;
 
     display: flex;
@@ -18,7 +16,7 @@
     background: linear-gradient(to left, rgba($main-bgcolor, 0.4), rgba($second-bgcolor, 0.4));
 }
 
-.contacts__info {
+.contacts-info {
     width: 100%;
     max-width: 700px;
     padding: 80px 50px;
@@ -26,22 +24,22 @@
     text-align: center;
 }
 
-.info__title {
+.contacts-info__title {
     font-size: 35px;
     color: #000;
     margin-bottom: 60px;
 }
 
-.info__item {
+.contacts-info__item {
     margin-bottom: 70px;
 }
 
-.info__item-title {
+.contacts-info__item-title {
     font-size: 28px;
     margin-bottom: 40px;
 }
 
-.info__link {
+.contacts-info__link {
     display: block;
 
     font-size: 25px;
@@ -144,3 +142,7 @@
         text-decoration: underline;
     }
 }
+
+/*Адаптивность 
+====================================================*/
+ 

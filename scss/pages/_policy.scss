@@ -26,4 +26,10 @@
     &:hover {
         text-decoration: none;
     }
+
+    & span {
+        font-size: 30px;
+        color: red;
+        text-decoration: underline;
+    }
 }
