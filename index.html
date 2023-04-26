@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="scss/css/style.css"
+    <link rel="stylesheet" href="css/style.css"
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Грантрайтинг для НКО</title>
@@ -10,7 +10,7 @@
 <body>
     <div class="page">
         <header class="header">
-            <nav class="menu header__menu">
+            <nav class="menu header__menu menu__desktop">
                 <img class="logo header__logo" src="img/logo.png" alt="">
                 <ul class="header-nav">
                     <li class="header-nav__item">
@@ -33,6 +33,11 @@
                     </li>
                 </ul>
                 <a class="header__phone" href="#">8 800 000 00 00</a>
+            </nav>
+            <nav class="menu menu__mobile">
+                <img class="logo header__logo" src="img/logo.png" alt="">
+                <a class="header__phone" href="#">8 800 000 00 00</a>
+                <div class="menu__burger"><span>toggle</span></div>
             </nav>
             <div class="header__block" id="home">
                 <h1 class="title header__title">Грантрайтинг для НКО</h1>
@@ -213,7 +218,7 @@
                             <input class="contacts__input" type="text" name="name" placeholder="Имя">
                             <input class="contacts__input" type="tel" name="tel" placeholder="Номер телефона">
                             <input class="button contacts__button" type="submit">
-                            <div class="form__info">Нажимая кнопку "Отправить" вы даете согласие на обработку персональных данных в соответствии с <a class="policy" href="">Политикой конфиденциальности</a></div>
+                            <div class="form__info">Нажимая кнопку "Отправить", вы даете согласие на обработку персональных данных в соответствии с <a class="policy" href="">Политикой конфиденциальности</a></div>
                         </form>
                     </div>
                 </div>
@@ -237,8 +242,10 @@
                     </ul>
                     <div class="footer__item">
                         <div class="footer__contacts-title">По всем вопросам с нами можно связаться: </div>
-                        <a class="footer__contacts-info" href="">8 800 000-00-00</a>
-                        <a class="footer__contacts-info" href="">8 800 000-00-00</a>
+                        <div class="footer__info-box">
+                            <a class="footer__contacts-info" href="">8 800 000-00-00</a>
+                            <a class="footer__contacts-info" href="">8 800 000-00-00</a>
+                        </div>
                     </div>
                 </nav>
             </div>

@@ -1,13 +1,14 @@
 .services {
     padding-bottom: 70px;
 
-    background: linear-gradient(to right, rgba($main-bgcolor, 1), rgba($second-bgcolor, 0.6)), url(../../img/bg3.jpg);
+    background: linear-gradient(to right, rgba($main-bgcolor, 1), rgba($second-bgcolor, 0.6)), url(../img/bg3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .services__container {
     margin: 70px auto 0;
+
     display: flex;
     justify-content: center;
     align-items: start;
@@ -120,5 +121,97 @@
         margin-top: 50px;
         font-size: 33px;
         text-decoration: underline;
+    }
+}
+
+/*Адаптивность 
+====================================================*/
+
+@media (max-width: 1401px) {
+    .services__item-description {
+        width: 300px;
+        height: 300px;
+    }
+
+    .services__item-title {
+        font-size: 23px;
+    }
+
+    .services__item-text {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 1281px) {
+    .services__item-description {
+        width: 290px;
+        height: 290px;
+    }
+
+    .services__item-text {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 1001px) {
+    .services__container {
+        flex-wrap: wrap;
+    }
+
+    .services__item {
+        max-width: 300px;
+
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-top: 30px;
+        }
+    }
+
+    .services__item-description {
+        width: 250px;
+        height: 250px;
+    }
+
+    .services__item-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 710px) {
+    .services__item {
+        margin-right: 20px;
+        margin-left: 20px;
+
+        &:nth-child(2) {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .services__item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 301px) {
+    .services__item-button {
+        max-width: 200px;
+
+        font-size: 20px;
+
+        &:hover {
+            width: 215px;
+            font-size: 22px;
+        }
+    
+        &:active {
+            width: 215px;
+            font-size: 22px;
+        }
     }
 }

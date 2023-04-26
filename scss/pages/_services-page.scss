@@ -2,7 +2,7 @@
     padding-top: 50px;
     padding-bottom: 60px;
 
-    background: linear-gradient(to right, rgba($third-bgcolor, 0.7), rgba($third-bgcolor, 0.7)), url(../../img/bg-serv.jpg);
+    background: linear-gradient(to right, rgba($third-bgcolor, 0.7), rgba($third-bgcolor, 0.7)), url(../img/bg-serv.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@
 
 .percent__block {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: start;
 }
 
@@ -83,9 +83,6 @@
     }
 }
 
-
-
-
 .services-page__container {
     width: 100%;
     max-width: 1400px;
@@ -108,5 +105,201 @@
     &:active {
         font-weight: 700;
         text-decoration: none;
+    }
+}
+
+/*Адаптивность 
+=====================================*/
+
+@media (max-width: 1201px) {
+    .percent__container {
+        right: 80px;
+    }
+
+    .percent__line {
+        width: 500px;
+    }
+
+    .percent__item {
+        &-1 {
+            max-width: 400px;
+        }
+
+        &-2 {
+            max-width: 100px;
+        }
+    }
+
+    .percent__number {
+        &-1 {
+            font-size: 140px;
+        }
+
+        &-2 {
+            font-size: 60px;
+        }
+    }
+
+    .percent__description {
+        &-2 {
+            font-size: 18px;
+        }
+    } 
+}
+
+@media (max-width: 1001px) {
+    .percent__line {
+        width: 350px;
+    }
+
+    .percent__item {
+        &-1 {
+            max-width: 280px;
+        }
+
+        &-2 {
+            max-width: 70px;
+        }
+    }
+
+    .percent__number {
+        &-1 {
+            font-size: 100px;
+        }
+
+        &-2 {
+            font-size: 40px;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 851px) {
+    .services-page__container {
+        margin-top: 370px;
+    }
+
+    .percent__container {
+        top: 210px;
+    }
+
+    .services-page__item {
+        margin-top: 30px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .services-page__link {
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 451px) {
+    .services-page__title {
+        height: 80px;
+        padding: 15px 30px 15px 100px;
+
+        font-size: 40px;
+    }
+    
+    .percent__container {
+        top: 180px;
+        left: 30px;
+    }
+
+    .percent__line {
+        width: 250px;
+    }
+
+    .percent__item {
+        &-1 {
+            max-width: 200px;
+        }
+
+        &-2 {
+            max-width: 50px;
+        }
+    }
+
+    .percent__number {
+        &-1 {
+            font-size: 80px;
+        }
+
+        &-2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+    }
+
+    .percent__description {
+        &-1 {
+            font-size: 20px;
+        }
+
+        &-2 {
+            font-size: 15px;
+        }
+    }
+
+    .services-page__container {
+        margin-top: 260px;
+        padding: 30px;
+    }
+
+    .services-page__link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 361px) {
+    .percent__line {
+        background: linear-gradient(to right, $element-color 70%, $layout-color 70%);
+    }
+
+    .percent__item {
+        &-1 {
+            max-width: 180px;
+        }
+
+        &-2 {
+            max-width: 70px;
+        }
+    }
+
+    .percent__number {
+        &-1 {
+            font-size: 60px;
+        }
+
+        &-2 {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+    }
+
+    .percent__description {
+        font-weight: 400;
+
+        &-1 {
+            font-size: 18px;
+        }
+
+        &-2 {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 301px) {
+    .services-page__container {
+        margin-top: 60px;
+    }
+
+    .percent__container {
+        display: none;
     }
 }

@@ -1,7 +1,7 @@
 .question {
     padding-bottom: 70px;
 
-    background: linear-gradient(to right, rgba($main-bgcolor, 0.7), rgba(153, 152, 189, 0.7), rgba($main-bgcolor, 0.7)), url(../../img/bg6.jpg);
+    background: linear-gradient(to right, rgba($main-bgcolor, 0.7), rgba(153, 152, 189, 0.7), rgba($main-bgcolor, 0.7)), url(../img/bg6.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,3 +95,54 @@
 /*Адаптивность 
 ====================================================*/
 
+@media (max-width: 1001px) {
+    .question__item-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 636px) {
+    .question__title.title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 554px) {
+    .question__title.title {
+        height: 100px;
+    }
+
+    .question__item-title {
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 401px) {
+    .question__item {
+        padding: 20px;
+
+        text-align: center;
+    }
+
+    .question__item-description {
+        flex-direction: column;
+    }
+
+    .question__item-icon {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 386px) {
+    .question__title.title {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 354px) {
+    .question__title.title {
+        height: 125px;
+    }
+}

@@ -1,7 +1,7 @@
 .about {
     padding-bottom: 60px;
 
-    background: linear-gradient(to right, rgba($third-bgcolor, 0.7), rgba($third-bgcolor, 0.7)), url(../../img/bg2.jpg);
+    background: linear-gradient(to right, rgba($third-bgcolor, 0.7), rgba($third-bgcolor, 0.7)), url(../img/bg2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,14 +62,97 @@
     }
 }
 
-
 /*Адаптивность 
 ====================================================*/
 
 @media (max-width: 1401px) {
-
     .about__text {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 1281px) {
+    .about__icon {
+        width: 75px;
+        height: 60px;
+    }
+
+    .about__text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 769px) {
+    .about__icon {
+        width: 60px;
+        height: 48px;
+    }
+
+    .about__text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 551px) {
+    .about__text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 451px) {
+    .about__items-item {
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .about__text {
+        margin-top: 20px;
+
+        text-align: center;
+    }
+
+    .about__button {
+        width: 300px;
+        height: 69px;
+    
+        font-size: 20px;
+       
+        &:active {
+            width: 315px;
+            height: 70px;
+    
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .about__items-item {
+        padding: 15px;
+    }
+
+    .about__text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 321px) {
+    .about__text {
+        font-size: 15px;
+    }
+
+    .about__button {
+        width: 230px;
+        height: 69px;
+    
+        font-size: 15px;
+       
+        &:active {
+            width: 235px;
+            height: 70px;
+    
+            font-size: 16px;
+        }
     }
 }
 

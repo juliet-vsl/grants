@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="scss/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Написание проекта</title>
@@ -12,7 +12,7 @@
         <main class="main">
             <div class="serv">
                 <h2 class="title page__title serv__title">Написание заявки под ключ</h2>
-                <div class="serv__container">
+                <div class="container serv__container">
                     <div class="serv__item">Мы пишем заявку любой сложности по фиксированной цене, которая оплачивается, 
                         как 100% предоплата. При этом в случае неудачи средства не возвращаются,
                         а в случае победы мы не берем процент от суммы проекта.</div>
@@ -24,7 +24,7 @@
 
             <div class="include">
                 <div class="title section__title include__title">В стоимость услуги включено</div>
-                <div class="include__container">
+                <div class="container include__container">
                     <div class="include__item">
                         <div class="include__item-title">Наш большой опыт работы с НКО</div>
                         <div class="include__item-text">Мы пишем заявку любой сложности по фиксированной цене, которая оплачивается,как 100% предоплата.</div>
@@ -51,7 +51,7 @@
             
             <div class="process">
                 <div class="title section__title process__title">Алгоритм работы</div>
-                <div class="process__order">
+                <div class="container process__order">
                     <div class="process__container">
                         <div class="process__item process__item-left">
                             <div class="process__step process__step-1">
@@ -105,7 +105,7 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__container">
+            <div class="container footer__container">
                 <img class="logo footer__logo" src="img/logo.png" alt="">
                 <nav class="footer__menu">
                     <ul class="footer__item">
@@ -121,8 +121,10 @@
                     </ul>
                     <div class="footer__item">
                         <div class="footer__contacts-title">По всем вопросам с нами можно связаться: </div>
-                        <a class="footer__contacts-info" href="">8 800 000-00-00</a>
-                        <a class="footer__contacts-info" href="">8 800 000-00-00</a>
+                        <div class="footer__info-box">
+                            <a class="footer__contacts-info" href="">8 800 000-00-00</a>
+                            <a class="footer__contacts-info" href="">8 800 000-00-00</a>
+                        </div>
                     </div>
                 </nav>
             </div>
