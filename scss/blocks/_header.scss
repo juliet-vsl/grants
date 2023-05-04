@@ -7,6 +7,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    position: relative;
 }
 
 .header__menu {
@@ -26,7 +28,6 @@
 .header__logo {
     z-index: 2;
 }
-
 
 .header-nav {
     width: 100%;
@@ -103,7 +104,7 @@
 .header__block {
     width: 100%;
     max-width: 950px;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: 150px;
     margin-bottom: 145px;
 
@@ -139,6 +140,124 @@
         width: 450px;
         height: 115px;
         font-size: 45px;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: $element-color;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: $element-color;
+}
+
+.header-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 40px 30px 30px;
+
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header-form.non-active {
+    right: -100%;
+}
+
+.header-form__close {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+
+    & span {
+        width: 40px;
+        height: 0px;
+
+        transform: rotate(45deg);
+
+        background-color: $element-color;
+        font-size: 0;
+    }
+
+    & span:after,
+    & span:before {
+        content: '';
+        width: 40px;
+        height: 2px;
+
+        display: block;
+        background-color: $element-color;
+
+        position: absolute;
+    }
+
+    & span:after {
+        top: 20px;
+        transform: rotate(-45deg);
+    }
+
+    & span:before {
+        top: 20px;
+        transform: rotate(45deg);
+    }
+}
+
+
+.header-form__title {
+    font-size: 30px;
+}
+
+.header-form__input {
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    margin: 20px auto 0;
+
+    display: block;
+
+    border: none;
+    border-bottom: 1px solid #808080;
+
+    font-family: inherit;
+    font-size: 20px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-size: 20px;
+    }
+}
+
+.header-form__button.button {
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 15px;
+    padding: 10px;
+    
+    border: none;
+
+    font-family: inherit;
+    font-size: 20px;
+
+    &:focus {
+        outline: none;
     }
 }
 
@@ -274,15 +393,21 @@
         height: 80px;
         margin-left: 120px;
 
+        font-size: 28px;
+
 
         &:hover {
             width: 310px;
             height: 83px;
+
+            font-size: 29px;
         }
 
         &:active {
             width: 310px;
             height: 83px;
+
+            font-size: 29px;
         }
     }
 }
@@ -374,6 +499,32 @@
         } 
     }     
 
+    .header-nav__mobile {
+        width: 100%;
+        max-width: 200px;
+
+        text-align: center;
+
+        background-color: rgba($layout-color, 0.8);
+
+        display: none;
+        
+        flex-direction: column;
+        position: fixed;
+        top: 109px;
+        right: 0;
+        z-index: 5;
+
+        &.active {
+            display: flex;
+            top: 109px;
+        }
+
+        & .header-nav__item {
+            margin: 0 auto;
+        }
+    }
+
     .header__phone {
         width: 100%;
         max-width: 800px;
@@ -449,11 +600,15 @@
         &:hover {
             width: 270px;
             height: 60px;
+
+            font-size: 26px;
         }
 
         &:active {
             width: 275px;
             height: 62px;
+
+            font-size: 26px;
         }
     }
 
@@ -498,6 +653,19 @@
             top: 10px;
         }
     }
+
+    .header-form__title {
+        font-size: 25px;
+    }
+
+    .header-form__input {
+        height: 40px;
+        font-size: 15px;
+
+        &::placeholder {
+            font-size: 15px;
+        }
+    }
 }
 
 @media (max-width: 351px) {
@@ -523,11 +691,15 @@
         &:hover {
             width: 230px;
             height: 60px;
+
+            font-size: 22px;
         }
 
         &:active {
             width: 235px;
             height: 62px;
+
+            font-size: 22px;
         }
     }
 }
@@ -562,11 +734,15 @@
         &:hover {
             width: 200px;
             height: 60px;
+
+            font-size: 19px;
         }
 
         &:active {
             width: 205px;
             height: 62px;
+
+            font-size: 19px;
         }
     }
 }

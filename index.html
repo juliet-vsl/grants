@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css"
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -38,14 +39,74 @@
                 <img class="logo header__logo" src="img/logo.png" alt="">
                 <a class="header__phone" href="#">8 800 000 00 00</a>
                 <div class="menu__burger"><span>toggle</span></div>
+                <ul class="header-nav__mobile">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#home">Главная</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#about">О нас</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#services">Услуги</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#results">Кейсы</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#questions">FAQ</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
             </nav>
-            <div class="header__block" id="home">
-                <h1 class="title header__title">Грантрайтинг для НКО</h1>
-                <p class="text header__text">Вы получите готовый проект и оформленную
-                    заявку на грант с высокими шансами</p>
-                <img class="arrow header__arrow" src="img/arrow.png" alt="">
-                <a class="button header__button">Связаться с нами</a>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="header__block" id="home">
+                        <h1 class="title header__title">Грантрайтинг для НКО</h1>
+                        <p class="text header__text">Вы получите готовый проект и оформленную
+                            заявку на грант с высокими шансами</p>
+                        <img class="arrow header__arrow" src="img/arrow.png" alt="">
+                        <a class="button header__button">Связаться с нами</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="header__block" id="home">
+                        <h1 class="title header__title">Грантрайтинг для НКО</h1>
+                        <p class="text header__text">Вы получите готовый проект и оформленную
+                            заявку на грант с высокими шансами</p>
+                        <img class="arrow header__arrow" src="img/arrow.png" alt="">
+                        <a class="button header__button">Связаться с нами</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="header__block" id="home">
+                        <h1 class="title header__title">Грантрайтинг для НКО</h1>
+                        <p class="text header__text">Вы получите готовый проект и оформленную
+                            заявку на грант с высокими шансами</p>
+                        <img class="arrow header__arrow" src="img/arrow.png" alt="">
+                        <a class="button header__button" href="#form">Связаться с нами</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
             </div>
+
+            <form class="header-form non-active" action="" id="form">
+                <div class="header-form__close"><span>close</span></div>
+                <div class="header-form__title">Заполните заявку, и мы свяжемся с вами</div>
+                <input class="header-form__input" type="text" name="name" placeholder="Ваше имя">
+                <input class="header-form__input" type="tel" name="tel" placeholder="Ваш номер телефона">
+                <input  class="button header-form__button" type="submit">
+                <div class="header-form__text">Нажимая кнопку "Отправить", вы даете согласие на обработку персональных данных в соответствии с <a class="policy" href="policy.html">Политикой конфиденциальности</a></div>
+            </form>
         </header>
 
         <main class="main">
@@ -215,10 +276,10 @@
                     <div class="contacts__feedback">
                         <div class="form__title">Оставить заявку</div>
                         <form class="contacts__form" action="">
-                            <input class="contacts__input" type="text" name="name" placeholder="Имя">
-                            <input class="contacts__input" type="tel" name="tel" placeholder="Номер телефона">
+                            <input class="contacts__input" type="text" name="name" placeholder="Имя" required>
+                            <input class="contacts__input" type="tel" name="tel" placeholder="Номер телефона" required>
                             <input class="button contacts__button" type="submit">
-                            <div class="form__info">Нажимая кнопку "Отправить", вы даете согласие на обработку персональных данных в соответствии с <a class="policy" href="">Политикой конфиденциальности</a></div>
+                            <div class="form__info">Нажимая кнопку "Отправить", вы даете согласие на обработку персональных данных в соответствии с <a class="policy" href="policy.html">Политикой конфиденциальности</a></div>
                         </form>
                     </div>
                 </div>
@@ -255,5 +316,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

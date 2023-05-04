@@ -144,6 +144,8 @@
 }
 
 .process__step {
+    opacity: 0.5;
+
     &-1 {
         margin-bottom: 120px;
     }
@@ -158,6 +160,10 @@
 
     &-5 {
         margin-bottom: 110px;
+    }
+
+    &:hover {
+        opacity: 1;
     }
 }
 
@@ -348,6 +354,8 @@
 
 @media (max-width: 891px) {
     .process__step {   
+        opacity: 1;
+        
         &-4 {
             margin-bottom: 70px;
         }
