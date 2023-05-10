@@ -100,30 +100,11 @@
 }
 
 .contacts__button {
-    width: 200px;
-    height: 70px;
     margin: 0 auto 32px;
-    padding: 20px;
 
     border: none;
     font-family: inherit;
     font-size: 25px;
-
-    &:hover {
-        width: 210px;
-        height: 72px;
-        margin: 0 auto 30px;
-
-        font-size: 28px;
-    }
-
-    &:active {
-        width: 210px;
-        height: 72px;
-        margin: 0 auto 30px;
-
-        font-size: 28px;
-    }
 }
 
 .form__info {
@@ -212,6 +193,10 @@
         font-size: 20px;
     }
 
+    .contacts__feedback {
+        padding: 80px 20px;
+    }
+
     .form__title {
         font-size: 30px;
     }
@@ -227,25 +212,7 @@
     }
 
     .contacts__button.button {
-        width: 180px;
-        height: 60px;
-        padding: 14px;
-
         font-size: 22px;
-    
-        &:hover {
-            width: 190px;
-            height: 62px;
-    
-            font-size: 24px;
-        }
-    
-        &:active {
-            width: 190px;
-            height: 62px;
-    
-            font-size: 24px;
-        }
     }
 
     .form__info {

@@ -1,5 +1,5 @@
 .services-page {
-    padding-top: 50px;
+    padding-top: 250px;
     padding-bottom: 60px;
 
     background: linear-gradient(to right, rgba($third-bgcolor, 0.7), rgba($third-bgcolor, 0.7)), url(../img/bg-serv.jpg);
@@ -17,7 +17,7 @@
 
 .percent__container {
     position: absolute;
-    top: 60px;
+    top: 260px;
     right: 130px;
 }
 
@@ -112,7 +112,12 @@
 =====================================*/
 
 @media (max-width: 1201px) {
+    .services-page {
+        padding-top: 200px;
+    }
+
     .percent__container {
+        top: 210px;
         right: 80px;
     }
 
@@ -145,6 +150,16 @@
             font-size: 18px;
         }
     } 
+}
+
+@media (max-width: 1065px) {
+    .services-page {
+        padding-top: 170px;
+    }
+
+    .percent__container {
+        top: 180px;
+    }
 }
 
 @media (max-width: 1001px) {
@@ -180,7 +195,7 @@
     }
 
     .percent__container {
-        top: 210px;
+        top: 290px;
     }
 
     .services-page__item {
@@ -198,15 +213,8 @@
 }
 
 @media (max-width: 451px) {
-    .services-page__title {
-        height: 80px;
-        padding: 15px 30px 15px 100px;
-
-        font-size: 40px;
-    }
-    
     .percent__container {
-        top: 180px;
+        top: 280px;
         left: 30px;
     }
 

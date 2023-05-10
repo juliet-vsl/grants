@@ -58,7 +58,8 @@ body {
 }
 
 .button {
-    padding: 30px 0;
+    width: 11em;
+    padding: 1em 0;
 
     border-radius: 10px;
     background-color: $element-color;
@@ -73,10 +74,12 @@ body {
     transition: 0.3s;
 
     &:hover {
+        text-transform: uppercase;
         background-color: darken($color: $element-color, $amount: 10);
     }
 
     &:active {
+        text-transform: uppercase;
         background-color: darken($color: $element-color, $amount: 20);
     }
 }
@@ -93,9 +96,8 @@ body {
 }
 
 .page__title {
-    height: 100px;
     margin: 0;
-    padding: 15px 30px 15px 50px;
+    padding: 0.2em 0.4em;
 
     font-size: 60px;
     text-align: right;
@@ -142,6 +144,12 @@ body {
     }
 }
 
+@media (max-width: 1065px) {
+    .page__title {
+        font-size: 50px;
+    }
+}
+
 @media (max-width: 1001px) {
     .container {
         max-width: 900px;
@@ -156,6 +164,12 @@ body {
 @media (max-width: 769px) {
     .container {
         padding: 0 30px;
+    }
+}
+
+@media (max-width: 451px) {
+    .page__title {
+        font-size: 40px;
     }
 }
 

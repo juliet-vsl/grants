@@ -40,26 +40,9 @@
 }
 
 .about__button {
-    width: 500px;
-    height: 69px;
+    width: 17em;
     margin: 0 auto;
-    padding: 20px 0;
-
     font-size: 25px;
-
-    &:hover {
-        width: 530px;
-        height: 70px;
-
-        font-size: 27px;
-    }
-
-    &:active {
-        width: 530px;
-        height: 70px;
-
-        font-size: 28px;
-    }
 }
 
 /*Адаптивность 
@@ -97,6 +80,11 @@
     .about__text {
         font-size: 20px;
     }
+
+    .about__button {
+        width: 11em;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 451px) {
@@ -109,20 +97,6 @@
         margin-top: 20px;
 
         text-align: center;
-    }
-
-    .about__button {
-        width: 300px;
-        height: 69px;
-    
-        font-size: 20px;
-       
-        &:active {
-            width: 315px;
-            height: 70px;
-    
-            font-size: 22px;
-        }
     }
 }
 
@@ -141,18 +115,8 @@
         font-size: 15px;
     }
 
-    .about__button {
-        width: 230px;
-        height: 69px;
-    
+    .about__button {    
         font-size: 15px;
-       
-        &:active {
-            width: 235px;
-            height: 70px;
-    
-            font-size: 16px;
-        }
     }
 }
 

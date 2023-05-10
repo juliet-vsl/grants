@@ -28,6 +28,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .question__item-title {
@@ -89,6 +93,14 @@
 
 .question__item-text {
     display: none;
+
+    margin-top: 20px;
+    padding: 20px;;
+    font-size: 25px;
+}
+
+.question__item-text.active {
+    display: block;
 }
 
 

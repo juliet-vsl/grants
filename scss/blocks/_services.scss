@@ -78,24 +78,9 @@
 }
 
 .services__item-button {
-    width: 250px;
-    height: 70px;
-    padding: 20px 0;
     margin: 25px auto 0;
 
     font-size: 25px;
-
-    &:hover {
-        width: 270px;
-        height: 71px;
-        font-size: 28px;
-    }
-
-    &:active {
-        width: 270px;
-        height: 71px;
-        font-size: 28px;
-    }
 }
 
 .services__button {
@@ -200,18 +185,6 @@
 
 @media (max-width: 301px) {
     .services__item-button {
-        max-width: 200px;
-
         font-size: 20px;
-
-        &:hover {
-            width: 215px;
-            font-size: 22px;
-        }
-    
-        &:active {
-            width: 215px;
-            font-size: 22px;
-        }
     }
 }
